@@ -6,16 +6,16 @@ e responda às seguintes questões:
 
 1. No estudo dos autores, qual foi a proporção de projetos de software que falharam? Esse valor é confiável?
 
-	Resposta:
+	Resposta: Dos 235 projetos válidos para o estudo foram considerados, pelos desenvolvedores dos mesmos, como falho 70 destes projetos. Isto totaliza cerca de 30% dos projetos. Este valor apresenta ser mais confiável do que os de estudos passados pois, segundo os autores, os estudos pasados baseavam-se em questionários dirigidos a executivos que pouco participaram do processo de desenvolvimento. Este estudo, entretanto, questiona profissionais de diversas localidades sobre diversos temas que envolvem projetos implementados recentemente poreles e chega a conclusões a partir dos dados entregues por pessoas que particiaram do dia-a-dia do projeto.
 
 
 
 2. A figura 1 apresenta os principais fatores de falhas em projetos de software e relações entre eles, mas não dá nome para essas relações. Escolha dois fatores que estejam relacionados e discuta qual a relação que você acha que existe entre elas, justificando sua resposta.
 
-	Resposta:
+	Resposta: Os fatores por mim escolhidos são O Cliente tinha expectativas irrealistas e Data da Entrega impactou processo de desenvolvimento. A relação entre estes fatores é até que óbvia, devido ao fato do cliente ter expectativas que fogem a realidade o mesmo espera que o produto fosse entregue rapidamente ou que pelo menos o processo mostrasse resultados prototipais o quanto antes. Esta pressão por parte do cliente faz com que o gerente de projetos cobre dos profissionais envolvidos que terminem as funcionalidades o quanto antes. Isto torna-se um problema pois os desenvolvedores acabam focando muito na parte funcional do projeto a fim de terminá-lo conforme o prazo estabelecido e não possuem tempo para tratar de detalhes como segurança, bom desenvolvimento para manutenção do código, melhores técnicas para implementar tal funcionalidade. Estes são poucos exemplos de como o prazo apertado pode influenciar negativamente o processo de desenvolvimento pois é focado somente o tempo.
 
 
 
 3. Qual é a sugestão dos autores para que futuros projetos de software fracassem menos, e como essa sugestão ajudaria a melhorar os novos projetos?
 
-	Resposta:
+	Resposta: Segundo os autores os projetos falham pelos mesmos motivos que falhavam a décadas atrás em outras empresas ou até mesmo dentro da mesma empresa. A principal sugestão dada pelos autores é que as equipes de desenvolvimento façam um post-mortem após o término de cada projeto. Esta prática ajudaria a análisar todos os aspectos que envolvem os integrantes do projeto a fim de que entendam onde os projetos estão falhando e o que podem tentar fazer para melhorar um fator de falha no desenvolvimento. Inclusive é citado que os desenvolvedores tem que aprender a mesma lição a cada projeto pois, por não realizarem tal atividade, os mesmos erros acontecem sempre.
