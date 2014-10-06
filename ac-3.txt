@@ -3,7 +3,6 @@
 
 Document: http://migre.me/m82wv
 
-
 2.- Git push + git pull request this file marking with Y (yes) or N (no) if the chosen requirements documents includes the given chapters and the notation elements used.
 
 ### Structure of a requirements document
