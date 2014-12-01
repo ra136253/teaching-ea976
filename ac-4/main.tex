@@ -40,8 +40,8 @@
 
 \usepackage{fancyhdr} % Required to customize headers
 \usepackage[brazil]{babel}
-\usepackage[latin1]{inputenc}
-%\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{pstricks}
 \usepackage{subfigure}
@@ -71,10 +71,10 @@
 %----------------------------------------------------------------------------------------
 
 \fancyhead[L]{\begin{tabular}{l r | l r} % The header is a table with 4 columns
-\textbf{2S/2014} & EA976 & \textbf{P\'agina:} & \thepage/\pageref{LastPage} \\ % Project name and page count
-\textbf{Atividade:} & Complementar \#4 & \textbf{Data:} & 27/10/14 \\ % Job number and last updated date
+\textbf{2S/2014} & EA976 & \textbf{Página:} & \thepage/\pageref{LastPage} \\ % Project name and page count
+\textbf{Atividade:} & Complementar \#4 & \textbf{Data:} & 30/11/14 \\ % Job number and last updated date
 \textbf{Professor:} & Christian E. Rothenberg & \textbf{Assunto:} & Caracterização  projeto \textit{open source}  \\ % Version and reviewed date
-\textbf{Projeto:} & Nome projeto open source & \textbf{Autor:} & Nome Aluno (RA: XXXXXX) \\ % Designer and reviewer
+\textbf{Projeto:} & Bootstrap & \textbf{Autor:} & João Marcos Rodrigues (RA: 136253) \\ % Designer and reviewer
 \end{tabular}}
 
 %----------------------------------------------------------------------------------------
@@ -87,9 +87,9 @@
 %	DOCUMENT CONTENT
 %----------------------------------------------------------------------------------------
 
-\section{Relat\'orio t\'ecnico descritivo sobre projeto de código livre} 
+\section{Relatório técnico descritivo sobre projeto de código livre} 
 
-Este modelo reduzido visa proporcionar um roteiro pr\'atico para a reda\,c\~ao do relatório da atvidade complementar \#4, na forma de relat\'orio simplificado. 
+Este modelo reduzido visa proporcionar um roteiro prático para a redação do relatório da atividade complementar \#4, na forma de relatório simplificado. 
 
 Esta se\,c\~ao \'e destinada a apresentar os objetivos do trabalho.\\
 
@@ -97,6 +97,9 @@ Esta se\,c\~ao \'e destinada a apresentar os objetivos do trabalho.\\
 
 Descreva brevemente o tipo de software desenvolvido no projeto, para que serve, quem usa, etc.
 
+Bootstrap é um coleção de ferramentas para a criação de websites e aplicações web. O projeto conta com diversos templates de desegn focados para a responsividade necessária para as tecnologias web atualmente devido ao aumento do número de resoluções de tela encontradas no mercado. \\
+O projeto foi originamente desenvolvido para a criação do Twitter. Cerca de um ano sendo desenvolvido internamente na empresa, sendo utilizado como uma guia de estilo de design de websites, o projeto foi liberado como Open Source. Para que pudesse servir de guia e audar a padronizar os front-end dos diversos web-sites de diferentes desenvolvedores o projeto iniciou uma comunidade muito forte e atuante sendo atingindo, em junho de 2014, o projeto número um no GitHub com cerca de 74000 estrelas e 28000 forks.\\
+As linguagens envolvidas no projeto incluem, entre outras, aquelas utilizaas para o design de páginas web. Ou seja, o projeto consta majoritariamente com códigos em CSS e JavaScript. Funcionando de forma a ser agregada às suas páginas web desenvolvidas o Bootstrap é tão simples que mesmo uma pessoa com pouquissíma habilidade no desenvolvimeno de design de websites pode utilizar o framework. Sua popularidade tornou-se muito grande e atinge incontáveis usuários ao redor do planeta, fazendo que seja utilizado desde a desenvolvedores amadores e hobbystas de website até grandes agências e empresas como a NASA e a MSNBC.
 
 
 \section{Caracterização do projeto de código livre} 
@@ -107,42 +110,71 @@ Pesquise sobre o projeto para responder as seguintes questões.
 
 
 \begin{itemize}
-\item Existe um local dedicado para o desenvolvimento?
-\item É possível extrair o atual código fonte a partir de um repositório público de código fonte?
-\item Quão grande é o código?
-\item Quais são as principais linguagens de programação?
-\item A utilização do pacote depende de algum outro software proprietário ou de código fonte aberto?
-\item É possível calcular o número de \textit{downloads} ou usuários de uma versão em particular?
+\item Existe um local dedicado para o desenvolvimento?\\
+	Não foram encontrados indícios de um local específico para o desenvolvimento do projeto. Por ter sido desenvolvido, inicialmente, pelo Twitter boa parte do desenvolvimento foi feito por desenvolvedores de lá. Entretanto, desde que o projeto tornou-se open source, é um dos maiores repositórios do GitHub e possui contribuintes de toda a parte do globo.
+\item É possível extrair o atual código fonte a partir de um repositório público de código fonte?\\
+	Sim. O Bootstrap pode ser extraído do repositório do github designado a ele.
+\item Quão grande é o código?\\
+	O código obtido da branch master, após extraído, possui cerca de 400 arquivos totalizando 9,1 MB.
+\item Quais são as principais linguagens de programação?\\
+	Pela análise do github o projeto possui 50,7\% do código em CSS, 47,9\% em Javascript, 1,1\% em Python e os outros 0,3\% em outras linguagens (basicamente json, HTML, XML, etc).
+\item A utilização do pacote depende de algum outro software proprietário ou de código fonte aberto?\\
+	A utilização deste pacote não depende necessariamente de outros softwares quaisquer. A forma mais básica do pacote já encontra-se completamente compilada pronta para ser utilizada nos mais variados projetos web. O projeto conta, entretanto, com formas mais avançadas de distribuição e conforme o uso o desenvolvedor deve utilizar, entre outras ferramentas:
+	\begin{itemize}
+	\item Compilador Less
+	\item Grunt
+	\item Jekyll
+	\item Node.js
+	\item jQuery
+	\end{itemize}
+\item É possível calcular o número de \textit{downloads} ou usuários de uma versão em particular?\\
+	Estes dados não são divulgados mas estima-se que este número seja muito alto. Este é o projeto com o maior número de estrelas do GitHub e um dos projetos com o maior número de forks. É de se esperar que números na ordem de grandeza de milhão de desenvolvedores já utilizaram alguma versão do Bootstrap para desenvolvimento de front-end de websites, mesmo que indiretamente.
 \end{itemize}
 
 \subsection{Licença Software Livre}
 
 
 \begin{itemize}
-\item Quem são os patrocinadores que contribuem para a sustentabilidade do projeto?
-\item Quem detém os direitos autorais do código?
-\item O projeto está sob qual tipo de licença de código aberto?
-\item Por que os responsáveis pelo projeto escolheram a licença de código aberto?
+\item Quem são os patrocinadores que contribuem para a sustentabilidade do projeto?\\
+	Não há informação clara de patrocinadores do projeto. É possível supor que, por se tratar de um projeto original do Twitter, que a sustentabilidade do projeto tem apoio desta empresa. Entretanto o que mais contribui para a sustentabilidadedo projeto é o time central de desenvolvimento e a comunidade que a utiliza.
+
+\item Quem detém os direitos autorais do código?\\
+	A empresa que detém os direitos do código desde o início do seu desenvolvimento é o Twitter, visto que o mesmo é um projeto interno da companhia.	
+	
+\item O projeto está sob qual tipo de licença de código aberto?\\
+	O código está atualmente sob a licensa MIT. Versões anteriores do código estavam sob a licensa Apache, versão 2.0.
+\item Por que os responsáveis pelo projeto escolheram a licença de código aberto?\\
+	Informações divulgadas para a abertura do código foi que era de interesse dos desenvolvedores e do Twitter que as ferramentas de front-end de websites fossem unificadas e que houvesse um guia de estilo das páginas. A liberação do código pegou embalo em um Hackaton organizado pelo Twitter, em meados de 2011, onde diversos desenvolvedores de vários níveis diferentes de habilidade de programação começaram a aderir a utilizar o projeto.\\
+	 O projeto estava em desenvolvimento interno da empresa por cerca de um ano antes do liberação para o público.
 \end{itemize}
 
 \subsection{Governança}
 
 
 \begin{itemize}
-\item Existem quantos desenvolvedores alocados para o projeto?
-\item Quantos \textit{committers}, também conhecidos por desenvolvedores que podem realizar mudanças propostas, o projeto possui?
-\item O que você pode dizer sobre o modelo de governança de código fonte aberto?
+\item Existem quantos desenvolvedores alocados para o projeto?\\
+	Atualmente o projeto conta com seis desenvolvedores na equipe principal e mais dois desenvolvedores na equipe que trabalha com a adaptação do projeto para SASS. Há, também, vários contribuintes voluntários frequentes espalhados pelo mundo.
+
+\item Quantos \textit{committers}, também conhecidos por desenvolvedores que podem realizar mudanças propostas, o projeto possui?\\
+	Conforme já respondido o projeto recebe ajuda de diversos desenvolvedores ao redor do mundo. Segundo a página do GitHub este número é de 599 contribuintes. O código, entretanto, é revisado e mantido somente por uma pessoa, segundo divulgação na página do GitHub, um dos desenvolvedores iniciais do projeto, embora seja de se esperar que todos os desenvolvedores alocados no projeto participem da manutenção do código.
+\item O que você pode dizer sobre o modelo de governança de código fonte aberto?\\
+	Este é um ótimo modelo de governança do código. Manter o time de desenvolvimento inicial para a manutenção do código é útil para que o projeto mantenha as ideias originais de sua criação e ão divague destes ideiais. Além disso manter uma equipe alocada, mesmo que pequena, é uma ótima forma de manter a comunicação entre os projetistas forte e consolida melhor as informações e as metas para o projeto. Fora isso não é necessário uma equipe muito forte para a análise de pull requests ao projeto de desenvolvedores voluntários pois o projeto trata-se de uma ferramenta auxiliar de desenvolvimento de front-end e as mudanças propostas custumam não ser complexas.
 \end{itemize}
 
 \subsection{Manutenção}
 
 
 \begin{itemize}
-\item Gerenciamento de \textit{releases}: Qual o número e frequência de \textit{releases}?
-\item Comunicação: Existe um canal de comunicação útil e ativo para a comunidade / suporte ao usuário?
-\item Existe um \textit{bugtracker} (rastreamento de bugs) com uma lista de bugs corrigidos/pendentes de correção?
-\item Existe um plano de metas para planos futuros? Existe evidência que o plano de metas foi utilizado no passado?
-\item Existe consultoria comercial, treinamento ou consulta disponível para o projeto? A partir de múltiplos prestadores de serviços?         
+\item Gerenciamento de \textit{releases}: Qual o número e frequência de \textit{releases}?\\
+	Até o momento o projeto possui 30 realeases desde a sua liberação de código aberto da versão 1.0 para o público. A frequência de divulgação varia bastante entre uma realease e outra. Versões antigas eram distribuídas a cada mês e para as versões estáveis mais recentes a distribuição ocorre a cada três meses.
+\item Comunicação: Existe um canal de comunicação útil e ativo para a comunidade / suporte ao usuário?\\
+	Sim. A comunidade se relaciona para dúvidas por chats de IRC e o canal oficial do twitter além de, para dúvidas de implementação, ter uma força muito grande no site Stack Overflow. O projeto conta ainda com uma documentação detalhada e um blog divulgando as novidades no projeto.
+\item Existe um \textit{bugtracker} (rastreamento de bugs) com uma lista de bugs corrigidos/pendentes de correção?\\
+	Sim. O projeto conta com uma bug and issue tracker bastante detalhado, tanto para a busca quanto para o relatório de erros. Além da possibilidade de verificação se o erro está sendo corrigido ou se já foi reportado o projeto adiciona a possibilidade de requisitar futuras features para o projeto.
+\item Existe um plano de metas para planos futuros? Existe evidência que o plano de metas foi utilizado no passado?\\
+	Não foi encontrado nenhum plano de metas para o projeto. Entretanto a cada versão eles liberam um documento junto com o release, indicando o que foi acrescentado ao projeto e quais bugs foram corrigidos. É possível que grande parte das atualizações venham também da comunidade seja por código ou por requisições.
+\item Existe consultoria comercial, treinamento ou consulta disponível para o projeto? A partir de múltiplos prestadores de serviços?   \\
+	No site oficial do projeto consta bastante exemplos de usos do Bootstrap com guias de fácil entendimento para a utilização inicial da ferramenta. O projeto indica ainda a possibilidade de contactar ajuda e suporte da comunidade através de chat IRC e do site Stack Overflow. Estas ferramentas suprem a necessidade da comunidade de desenvolvedores não necessitando outros tipos de prestação de serviço.     
 \end{itemize}
         
 
